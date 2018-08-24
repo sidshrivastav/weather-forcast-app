@@ -9,34 +9,29 @@ Install dependencies
 ```bash
 npm install
 ```
+Also, setup your account for access key on BlackSky.
 
 ## Usage
 
-1 Add Note
+1 Find forecast
 
 ```bash
-node app.js add -t="Title" -b="Body/Description"
+node app.js -a="ADDRESS"
 ```
 
-2 Read Specific Note
+2 Find forecast with location name
 
 ```bash
-node app.js read -t="Title"
+node app.js -a="New Delhi"
 ```
 
-3 Delete Specific Note
+3 Find forecast with location pincode
 
 ```bash
-node app.js delete -t="Title"
+node app.js -a=110001
 ```
 
-4 List All Notes
-
-```bash
-node app.js list
-```
-
-5 Get Help
+4 Get Help
 
 ```bash
 node app.js --help
